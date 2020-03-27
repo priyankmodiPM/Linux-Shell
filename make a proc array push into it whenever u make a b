@@ -1,0 +1,8 @@
+make a proc array push into it whenever u make a bg proc
+
+keep a current proc, set it to NULL at begining of every loop, if execvp with foregorund, push into current_proc
+
+beginning of every loop, check if all procs in proc_array_background is valid or not [usekill( _, , 0) check ret value], if invalid ,remove from array, reset background_process_count, over here, print pid exited with code
+
+
+possible bug, in other functions like jobs, u consider processes which are dead, so keep checking. OR remove from list while u do fg.
